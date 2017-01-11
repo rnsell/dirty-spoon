@@ -3,7 +3,7 @@ let app = express()
 let port = 3000
 let webappRoute = require("./frontend/route.js")()
 
-app.use("/webapp", webappRoute)
+app.use("/", webappRoute)
 
 
 app.listen(port, function (){
